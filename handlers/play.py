@@ -118,7 +118,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**Mizuki Music assistant joined this group for play music 🎵**")
+                        message.chat.id, "** Music assistant joined this group for play music 🎵**")
 
                 except UserAlreadyParticipant:
                     pass
@@ -143,7 +143,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/caeb50039026a746e7252.jpg"
+        thumb_name = "https://telegra.ph/file/12ddf8c3b5fd0c470222b.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -153,7 +153,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                         text="Channel 🔊",
-                        url="https://t.me/Infinity_BOTs")
+                        url="https://t.me/Teamfunnymewat")
                    
                 ]
             ]
